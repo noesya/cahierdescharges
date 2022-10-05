@@ -1,4 +1,4 @@
-![Open Spec](https://raw.githubusercontent.com/noesya/openspec/master/assets/icons/logo.svg)
+![Open Spec](https://raw.githubusercontent.com/noesya/openspec/master/assets/icons/logo-black.svg)
 
 ## Pour contribuer
 
