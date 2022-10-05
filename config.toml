@@ -2,10 +2,11 @@ title = "Cahier des charges"
 description = "Un document coopératif et libre, pour produire des sites et services Web éco-conçus, accessibles aux personnes en situation de handicap, utiles, utilisables et utilisés."
 
 # Language settings
+contentDir = "content/fr"
 defaultContentLanguage = "fr"
-defaultContentLanguageInSubdir = false
+defaultContentLanguageInSubdir = true
 # Useful when translating.
-enableMissingTranslationPlaceholders = true
+enableMissingTranslationPlaceholders = false
 
 enableRobotsTXT = true
 
