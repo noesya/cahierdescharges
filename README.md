@@ -4,6 +4,8 @@
 
 ## Pour contribuer
 
+### Si vous codez
+
 Si vous voulez travailler localement sur le projet, il vous faut [installer Hugo](https://gohugo.io/getting-started/installing/), et Yarn ou NPM. Ensuite, vous pouvez utiliser ces commandes : 
 ```
 git clone --depth 1 git@github.com:noesya/openspec.git
@@ -13,3 +15,6 @@ hugo server
 ```
 Le site est alors visible sur http://localhost:1313.
 
+### Si vous ne codez pas
+
+Vous pouvez intervenir directement sur Github, soit par en ouvrant des issues ou en les commentant, soit par des modifications de fichiers markdown qui seront examinées avant d'être intégrées.
