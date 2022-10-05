@@ -36,16 +36,10 @@ jobs:
         run: |
           wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_Linux-64bit.deb \
           && sudo dpkg -i ${{ runner.temp }}/hugo.deb
-      - name: Install Node
-        uses: actions/setup-node@v3
+      - name: Setup Node
+        uses: actions/setup-node@v2.1.2
         with:
-          node-version: '16'
-          cache: 'npm'
-          # The action defaults to search for the dependency file (package-lock.json,
-          # npm-shrinkwrap.json or yarn.lock) in the repository root, and uses its
-          # hash as a part of the cache key.
-          # https://github.com/actions/setup-node/blob/main/docs/advanced-usage.md#caching-packages-data
-          cache-dependency-path: '**/package-lock.json'
+          node-version: '12.x'
       - name: Checkout
         uses: actions/checkout@v3
         with:
@@ -53,6 +47,7 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v2
+      - run: yarn install
       - name: Build with Hugo
         env:
           # For maximum backward compatibility with Hugo modules
