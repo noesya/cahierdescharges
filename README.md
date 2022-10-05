@@ -1,5 +1,7 @@
 ![Open Spec](https://raw.githubusercontent.com/noesya/openspec/master/assets/icons/logo-black.svg)
 
+[www.openspec.tech](https://www.openspec.tech)
+
 ## Pour contribuer
 
 Si vous voulez travailler localement sur le projet, il vous faut [installer Hugo](https://gohugo.io/getting-started/installing/), et Yarn ou NPM. Ensuite, vous pouvez utiliser ces commandes : 
