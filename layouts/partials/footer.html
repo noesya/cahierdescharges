@@ -1,0 +1,53 @@
+{{ $links := .Site.Params.links }}
+<footer class="bg-dark py-5 mx-n3 d-print-none" style="box-sizing: content-box;">
+  <div class="-container-fluid mx-5">
+    <div class="row">
+      <div class="col-sm-4 text-white mb-5">
+        <div class="cc-license-icons mb-2">
+          <span id="cc-logo" class="icon">
+            <img alt="cc logo" src="/images/license/cc_icon_white_x2.png" width="40">
+          </span>
+          <span class="icon">
+            <img alt="cc pd" src="/images/license/zero_white_x2.png" width="40">
+          </span>
+        </div>
+        <a href="https://creativecommons.org/share-your-work/public-domain/cc0/" class="text-white small">
+          <span property="dc:title dct:title">CC0 1.0 universel</span>
+          (<span property="dc:identifier dct:identifier" style="display:inline !important;">CC0 1.0</span>)<br>
+          Transfert dans le Domaine Public
+        </a>
+      </div>
+      <div class="col-sm-4 text-xs-center">
+        {{ with $links }}
+        {{ with index . "user"}}
+        {{ template "footer-links-block"  . }}
+        {{ end }}
+        {{ end }}
+      </div>
+      <div class="col-sm-4 text-md-right">
+        {{ with $links }}
+        {{ with index . "developer"}}
+        {{ template "footer-links-block"  . }}
+        {{ end }}
+        {{ end }}
+      </div>
+      <div class="col-12 col-sm-4">
+        {{ with .Site.Params.privacy_policy }}<small class="ml-1"><a href="{{ . }}" target="_blank" rel="noopener">{{ T "footer_privacy_policy" }}</a></small>{{ end }}
+	{{ if not .Site.Params.ui.footer_about_disable }}
+		{{ with .Site.GetPage "about" }}<p class="mt-2"><a href="{{ .RelPermalink }}">{{ .Title }}</a></p>{{ end }}
+	{{ end }}
+      </div>
+    </div>
+  </div>
+</footer>
+{{ define "footer-links-block" }}
+<ul class="list-inline mb-0">
+  {{ range . }}
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="{{ .name }}" aria-label="{{ .name }}">
+    <a class="text-white" target="_blank" rel="noopener" href="{{ .url }}" aria-label="{{ .name }}">
+      <i class="{{ .icon }}"></i>
+    </a>
+  </li>
+  {{ end }}
+</ul>
+{{ end }}
