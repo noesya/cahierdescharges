@@ -6,3 +6,15 @@
         display: none;
     }
 }
+
+@media (max-width: 768px) { 
+    .display-1 {
+        font-size: 2rem;
+    }
+    #main_navbar {
+        display: none;
+    }
+    .td-navbar {
+        background: #403F4C;
+    }
+}
