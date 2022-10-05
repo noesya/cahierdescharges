@@ -1,4 +1,4 @@
-# Cahier des charges
+![Open Spec](https://raw.githubusercontent.com/noesya/openspec/master/assets/icons/logo.svg)
 
 ## Pour contribuer
 
