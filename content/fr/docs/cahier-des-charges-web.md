@@ -2,7 +2,9 @@
 title: Cahier des charges Web
 ---
 
-> Ce cahier des charges vise à proposer une base saine pour un projet numérique de site ou de service numérique. Dans l'ensemble du document, nous utiliserons "Le site" pour parler du livrable, mais ce terme peut être adapté en fonction de la spécificité du contexte.
+> Ce cahier des charges vise à proposer une base saine pour un projet numérique de site ou de service numérique. Dans l'ensemble du document, nous utiliserons "Le site" pour parler du livrable, mais ce terme peut être adapté en fonction de la spécificité du contexte. 
+
+> Les chapitres tels que celui-ci, signalés par un trait orange, fournissent des informations de contexte à l'organisation qui souhaite utiliser le cahier des charges. Ils peuvent être supprimés du document final.
 
 ## Contexte [C]
 
