@@ -3,4 +3,4 @@
   command = "cd themes/docsy && git submodule update -f --init && cd ../.. && hugo"
 
 [build.environment]
-  HUGO_VERSION = "latest"
+  HUGO_VERSION = "0.104.3"
