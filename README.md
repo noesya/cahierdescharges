@@ -15,6 +15,11 @@ hugo server
 ```
 Le site est alors visible sur http://localhost:1313.
 
+Pour mettre à jour Docsy
+```
+hugo mod get -u github.com/google/docsy
+```
+
 ### Si vous ne codez pas
 
 Vous pouvez intervenir directement sur Github, soit par en ouvrant des issues ou en les commentant, soit par des modifications de fichiers markdown qui seront examinées avant d'être intégrées.
