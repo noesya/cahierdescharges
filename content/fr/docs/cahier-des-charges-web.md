@@ -12,6 +12,8 @@ description: >
 
 ## Contexte [C]
 
+> Les personnes qui répondent à votre appel d'offres ont besoin de comprendre qui vous êtes, et quel problème vous voulez résoudre. Pour cela, il faut une information juste, sincère et suffisante. Et il faut éviter de noyer sous un volume important d'informations non pertinentes
+
 ### Organisation
 
 ### Projet
@@ -20,10 +22,16 @@ description: >
 
 ### Cadre légal spécifique
 
-## Exigences projet [P]
+## Méthodologie [M]
 
-### Méthodologie intégrant les usagers
- 
+> Un projet Web s'adresse toujours à des usagers. Gérer un projet Web sans intégrer les utilisateurs, c'est un peu comme le jeu de la piñata : on ne sait pas ce qui va marcher ou pas, parce qu'on ne voit rien. Ça peut finir par marcher, mais [ce n'est pas très efficace](https://siecledigital.fr/2022/08/26/sncf-connect-un-fiasco-a-50-millions-deuros/).
+### Co-construction avec les usagers
+
+Exploration, priorisation
+
+### Tests utilisateurs
+
+Aux phases de maquette, pré-production, et production.
 ## Exigences fonctionnelles [F]
 
 ### Impératifs
@@ -79,3 +87,11 @@ Sources et références :
 ### Conformité RGESN
 
 ### Conformité RGPD
+
+## Prix [P]
+
+### Rémunération de l'appel d'offres
+
+### Prix du marché
+
+### Critères de décision
