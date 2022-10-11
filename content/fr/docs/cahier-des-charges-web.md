@@ -1,5 +1,9 @@
 ---
 title: Cahier des charges Web
+weight: 1
+description: >
+  Produire des sites et services Web éco-conçus, accessibles aux personnes en situation de handicap, utiles, utilisables et utilisés.
+
 ---
 
 > Ce cahier des charges vise à proposer une base saine pour un projet numérique de site ou de service numérique. Dans l'ensemble du document, nous utiliserons "Le site" pour parler du livrable, mais ce terme peut être adapté en fonction de la spécificité du contexte. 

@@ -1,8 +1,10 @@
 ---
 title: Contributions
+weight: 2
+description: >
+  Les personnes et organisations qui contribuent se présentent ici.
 ---
 
-> Les personnes et organisations qui contribuent se présentent ici.
 
 ## Ctrl S
 

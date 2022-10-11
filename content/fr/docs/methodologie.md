@@ -1,8 +1,10 @@
 ---
 title: Méthodologie
+weight: 3
+description: >
+  La méthode de fabrication du document.
 ---
 
-> Cette page documente la méthode de fabrication du document.
 
 Tout le monde peut proposer une modification au document, en passant par une pull request Github. 
 
