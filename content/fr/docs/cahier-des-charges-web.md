@@ -10,6 +10,10 @@ description: >
 
 > Les chapitres tels que celui-ci, signalés par un trait orange, fournissent des informations de contexte à l'organisation qui souhaite utiliser le cahier des charges. Ils peuvent être supprimés du document final.
 
+{{% pageinfo %}}
+En encadré comme ceci, les sources et références.
+{{% /pageinfo %}}
+
 ## Contexte [C]
 
 > Les personnes qui répondent à votre appel d'offres ont besoin de comprendre qui vous êtes, et quel problème vous voulez résoudre. Pour cela, il faut une information juste, sincère et suffisante. Et il faut éviter de noyer sous un volume important d'informations non pertinentes
@@ -39,7 +43,15 @@ Aux phases de maquette, pré-production, et production.
 ### Possibilités
 ## Exigences techniques [T]
 
-> Un projet numérique induit une couche technique. Le numérique étant à la fois matériel (impact écologique) et excluant (impact sociétal), il est nécessaire de faire des choix techniques pertinents, à même de minimiser l'impact écologique et de maximiser l'accessibilité, tout en garantissant le parfait respect des données personnelles, la souveraineté opérationnelle, et en assurant la pérennité de la solution.
+> Un projet numérique induit une couche technique, qui a forcément un impact multi-factoriel. Il s'agit ici de qualifier l'impact, de définir un principe "minimal par défaut" et de fixer un cadre chiffré d'objectifs à atteindre ou à ne pas dépasser.
+
+Le numérique étant à la fois matériel (impact écologique) et excluant (impact sociétal), il est nécessaire de faire des choix techniques pertinents, à même de minimiser l'impact écologique et de maximiser l'accessibilité, tout en garantissant le parfait respect des données personnelles, la souveraineté opérationnelle et en assurant la pérennité de la solution.
+
+L'ensemble des choix techniques préconisés devront l'être en respectant le principe du "minimal par défaut", c'est à dire que la solution la plus simple techniquement doit être envisagée comme base, et chaque brique technique ajoutée doit l'être à la suite d'une analyse bénéfices/risques favorable. La préconisation d'une solution "parce qu'elle fonctionne bien" ou "parce qu'elle est bien maîtrisée" génère des sous-optimalités à tous les niveaux.
+
+{{% pageinfo %}}
+- [Numérique, éducation et cosmopolitisme](https://www.cairn.info/revue-cites-2015-3-page-13.htm)
+{{% /pageinfo %}}
 
 ### Accessibilité [TA]
 
@@ -54,9 +66,10 @@ Le site doit avoir l'impact écologique le plus léger possible, sur plusieurs n
 - minimisation de l'impact réseau
 - minimisation de l'impact périphérique
 
-Sources et références :
+{{% pageinfo %}}
 - [Référentiel général d'écoconception de services numériques (RGESN)](https://ecoresponsable.numerique.gouv.fr/publications/referentiel-general-ecoconception/)
 - [GR491](https://gr491.isit-europe.org/)
+{{% /pageinfo %}}
 
 #### Minimisation de l'impact serveur [TEV]
 > Une cause importante de charge côté serveur est d'utiliser une solution identique pour tous les usages, comme par exemple WordPress. La solution doit être choisie en fonction des besoins réels, pas seulement parce que l'équipe qui la met en œuvre la connaît bien.
@@ -73,9 +86,10 @@ Les traitements de données pouvant nécessiter des calculs intensifs, par exemp
 
 L'infrastructure d'hébergement choisie doit présenter les meilleurs preuves d'efficacité, tant sur l'usage de l'électricité (Power Usage Effectiveness, PUE) que sur l'usage de l'eau (Water Usage Effectiveness, WUE). L'équilibre doit être recherché entre la souveraineté, la performance technique et la sobriété.
 
-Sources et références :
-- [RGESN Backent](https://ecoresponsable.numerique.gouv.fr/publications/referentiel-general-ecoconception/#backend)
-- [RGESN Hébergement]https://ecoresponsable.numerique.gouv.fr/publications/referentiel-general-ecoconception/#hebergement)
+{{% pageinfo %}}
+- [RGESN Backend](https://ecoresponsable.numerique.gouv.fr/publications/referentiel-general-ecoconception/#backend)
+- [RGESN Hébergement](https://ecoresponsable.numerique.gouv.fr/publications/referentiel-general-ecoconception/#hebergement)
+{{% /pageinfo %}}
 
 #### Minimisation de l'impact réseau [TER]
 > Les pages très lourdes ont plusieurs causes classiques, notamment les vidéos, les images et les librairies techniques. Des techniques existent pour diminuer ces impacts, encore faut-il définir précisément les attentes.
@@ -87,10 +101,11 @@ Les pages doivent être légères, particulièrement en mobile :
 - le nombre de requêtes par page sera à l'idéal inférieur à 25, au pire inférieur à 50
 - la politique de cache permettra d'éviter les rechargements inutiles, d'une page sur l'autre et d'une visite sur l'autre
 
-Sources et références :
+{{% pageinfo %}}
 - [Core Web Vitals](https://web.dev/learn-core-web-vitals/)
 - [Fast load times](https://web.dev/fast/)
 - [Reduce HTTP Requests Like a Pro & Boost Your Site Speed](https://www.titangrowth.com/blog/reduce-http-requests-like-a-pro-120/)
+{{% /pageinfo %}}
 
 #### Minimisation de l'impact périphérique [TEP]
 
