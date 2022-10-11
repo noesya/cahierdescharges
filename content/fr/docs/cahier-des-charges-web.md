@@ -32,12 +32,15 @@ Exploration, priorisation
 ### Tests utilisateurs
 
 Aux phases de maquette, pré-production, et production.
-## Exigences fonctionnelles [F]
+## Fonctionnalités [F]
 
 ### Impératifs
 
 ### Possibilités
 ## Exigences techniques [T]
+
+> Un projet numérique induit une couche technique. Le numérique étant à la fois matériel (impact écologique) et excluant (impact sociétal), il est nécessaire de faire des choix techniques pertinents, à même de minimiser l'impact écologique et de maximiser l'accessibilité, tout en garantissant le parfait respect des données personnelles, la souveraineté opérationnelle, et en assurant la pérennité de la solution.
+
 ### Accessibilité [TA]
 
 ### Écoconception [TE]
@@ -56,6 +59,23 @@ Sources et références :
 - [GR491](https://gr491.isit-europe.org/)
 
 #### Minimisation de l'impact serveur [TEV]
+> Une cause importante de charge côté serveur est d'utiliser une solution identique pour tous les usages, comme par exemple WordPress. La solution doit être choisie en fonction des besoins réels, pas seulement parce que l'équipe qui la met en œuvre la connaît bien.
+
+La charge de calcul et de stockage sur les serveurs doit être aussi légère que possible. 
+Pour cela, les choix architecturaux devront être justifiés, en partant du cas le plus simple, à savoir les fichiers HTML bruts, précompilés.
+Chaque composant logiciel ajouté (base de données, CMS, framework...) devra faire l'objet d'une analyse bénéfices/risques, et d'une preuve que la solution plus simple n'est pas adaptée au cas d'usage.
+
+Les données doivent être stockées de la façon la plus légère possible sans empêcher leur usage. 
+Le fonctionnement "par défaut" est de ne conserver aucune donnée.
+Chaque donnée doit être conservée uniquement par rapport à un usage défini au préalable, clairement identifié et proportionné aux besoins.
+
+Les traitements de données pouvant nécessiter des calculs intensifs, par exemple les préparations d'images pour différents formats d'affichage, doivent être exécutés une et une seule fois, en fonction du besoin réel. Les solutions de génération différée (lazy loading) mise en cache seront privilégiées par rapport aux solutions de génération lors de l'envoi (qui impliquent des calculs potentiellement inutiles) et surtout par rapport à la génération à la volée sans système de cache (qui impliquent des recalculs à l'identique).
+
+L'infrastructure d'hébergement choisie doit présenter les meilleurs preuves d'efficacité, tant sur l'usage de l'électricité (Power Usage Effectiveness, PUE) que sur l'usage de l'eau (Water Usage Effectiveness, WUE). L'équilibre doit être recherché entre la souveraineté, la performance technique et la sobriété.
+
+Sources et références :
+- [RGESN Backent](https://ecoresponsable.numerique.gouv.fr/publications/referentiel-general-ecoconception/#backend)
+- [RGESN Hébergement]https://ecoresponsable.numerique.gouv.fr/publications/referentiel-general-ecoconception/#hebergement)
 
 #### Minimisation de l'impact réseau [TER]
 > Les pages très lourdes ont plusieurs causes classiques, notamment les vidéos, les images et les librairies techniques. Des techniques existent pour diminuer ces impacts, encore faut-il définir précisément les attentes.
@@ -71,14 +91,22 @@ Sources et références :
 - [Core Web Vitals](https://web.dev/learn-core-web-vitals/)
 - [Fast load times](https://web.dev/fast/)
 - [Reduce HTTP Requests Like a Pro & Boost Your Site Speed](https://www.titangrowth.com/blog/reduce-http-requests-like-a-pro-120/)
+
 #### Minimisation de l'impact périphérique [TEP]
 
+Rétrocompatibilité
+
+Par défaut pas de framework, tout à justifier (bénéfices/risques)
 
 ### Respect des données personnelles
 
 ### Souveraineté de l'infrastructure
 
 #### Minimisation des dépendances techniques
+
+#### Choix de l'hébergement
+
+### Pérennité technique
 
 ## Exigences légales [L]
 
