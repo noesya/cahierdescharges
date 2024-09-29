@@ -1,0 +1,52 @@
+title: Open Spec
+baseURL: /
+
+contentDir: "content/fr"
+defaultContentLanguage: fr
+defaultContentLanguageInSubdir: true
+enableGitInfo: true
+enableRobotsTXT: true
+enableMissingTranslationPlaceholders: false
+languageCode: fr
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+
+menu:
+  main:
+    - name: Documentation
+      pageRef: /docs
+      weight: 1
+    - name: Search
+      weight: 4
+      params:
+        type: search
+    - name: GitHub
+      weight: 5
+      url: "https://github.com/noesya/openspec"
+      params:
+        icon: github
+
+module:
+  imports:
+    - path: github.com/imfing/hextra
+
+params:
+  editURL:
+    enable: true
+    base: "https://github.com/noesya/openspec/edit/main/content"
+  navbar:
+    displayTitle: false
+    displayLogo: true
+    logo:
+      path: images/logo-black.svg
+      dark: images/logo.svg
+      link: /
+      width: 200
+      height: 36
+  page:
+    width: wide
