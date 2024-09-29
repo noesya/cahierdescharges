@@ -8,17 +8,11 @@
 
 Si vous voulez travailler localement sur le projet, il vous faut [installer Hugo](https://gohugo.io/getting-started/installing/), et Yarn ou NPM. Ensuite, vous pouvez utiliser ces commandes : 
 ```
-git clone --depth 1 git@github.com:noesya/openspec.git
+git clone git@github.com:noesya/openspec.git
 cd openspec
-yarn
 hugo server
 ```
 Le site est alors visible sur http://localhost:1313.
-
-Pour mettre à jour Docsy
-```
-hugo mod get -u github.com/google/docsy
-```
 
 ### Si vous ne codez pas
 
